@@ -16,17 +16,20 @@
 		<li>tim:tim</li>
 	</ul>
 	
-	<form name='f'
-		action='j_spring_security_check'
-		method='post'>
+	<form name='f' action='' method='post'>
 		<fieldset>
+			<c:if test="${param.error != null}">        
+		        <p>
+		            Invalid username and password.
+		        </p>
+		    </c:if>
 			<p>
-				<label for="j_username">User:</label>
-				<input type='text' name='j_username' value=''/>
+				<label for="username">User:</label>
+				<input type='text' name='username' value='' autofocus="autofocus"/>
 			</p>
 			<p>
-				<label for="j_password">Password:</label>
-				<input type='password' name='j_password' />
+				<label for="password">Password:</label>
+				<input type='password' name='password' />
 			</p>
 			<div class="centerText">
 				<input name="submit" type="submit" value="Login" />
