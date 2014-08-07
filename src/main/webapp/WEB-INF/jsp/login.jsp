@@ -31,6 +31,7 @@
 				<label for="password">Password:</label>
 				<input type='password' name='password' />
 			</p>
+			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 			<div class="centerText">
 				<input name="submit" type="submit" value="Login" />
 			</div>
