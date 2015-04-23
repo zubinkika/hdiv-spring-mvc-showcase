@@ -27,6 +27,8 @@ public class HdivSecurityConfig extends HdivWebSecurityConfigurerAdapter {
 		registry.addUrlExclusions("/j_spring_security_check").method("POST");
 		registry.addUrlExclusions("/attacks/.*");
 		
+		registry.addUrlExclusions("/resources/.*");
+		
 		registry.addParamExclusions("_csrf");
 		
 		registry.addParamExclusions("param1", "param2").forUrls("/attacks/.*");

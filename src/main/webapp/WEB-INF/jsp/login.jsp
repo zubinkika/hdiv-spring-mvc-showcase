@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>
 <head>
-<title>Login</title>
-<link rel="stylesheet" type="text/css" href="./css/example.css" />
+	<title>Login</title>
+	<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 </head>
 
 <body onload='document.f.j_username.focus();'>

@@ -2,15 +2,14 @@
 <%@ include file="/WEB-INF/jsp/template/tags.jsp"%>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Auto Binding</title>
-		<link rel="stylesheet" type="text/css" href="../../css/example.css" />
+		<%@ include file="/WEB-INF/jsp/template/head.jsp"%>
 	</head>
 	<body>
 		
 		<c:url value="prepareAutoBinding.html" var="url" />
 		<a href="${url}">
-			<img src="../../images/back-icon.png" alt="Return to SQL String Injection page" class="back" />
+			<img src="${pageContext.request.contextPath}/resources/images/back-icon.png" alt="Return to SQL String Injection page" class="back" />
 		</a>
 	
 		<h1>User Orders</h1>
@@ -49,7 +48,7 @@
 					<td>
 						<c:url value="modifyAutoBinding/${order.username}/${order.orderId}.html" var="url" />
 						<a href="${url}">
-							<img src="../../images/modify.png" title="Modify" alt="Modify" class="icon" />
+							<img src="${pageContext.request.contextPath}/resources/images/modify.png" title="Modify" alt="Modify" class="icon" />
 						</a>
 					</td>									
 				</tr>
