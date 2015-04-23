@@ -9,7 +9,7 @@
 
 	<properties>
 		<org.springframework-version>4.1.6.RELEASE</org.springframework-version>
-		<org.springsecurity-version>3.2.7.RELEASE</org.springsecurity-version>
+		<org.springsecurity-version>4.0.1.RELEASE</org.springsecurity-version>
 		<org.slf4j-version>1.7.12</org.slf4j-version>
 		<org.hdiv-version>2.1.10</org.hdiv-version>
 	</properties>
@@ -21,8 +21,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.5.1</version>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 			<plugin>
